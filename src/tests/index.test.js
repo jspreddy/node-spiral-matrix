@@ -226,12 +226,12 @@ describe('index.js', () => {
 
     it('should log a spiral matrix of size 8', async () => {
       const spiral = spiralMatrix(8);
-      console.log(spiral.fillIncrementalIntegers());
+      console.table(spiral.fillIncrementalIntegers());
     });
 
     it('should log a spiral matrix of size 10', async () => {
       const spiral = spiralMatrix(10);
-      console.log(spiral.fillIncrementalIntegers());
+      console.table(spiral.fillIncrementalIntegers());
     });
   });
 });
