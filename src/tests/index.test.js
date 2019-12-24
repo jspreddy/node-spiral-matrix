@@ -189,5 +189,49 @@ describe('index.js', () => {
         [13, 12, 11, 10, 9],
       ]);
     });
+
+    it('should create a spiral matrix of size 4', async () => {
+      const spiral = spiralMatrix(4);
+      expect(spiral.fillIncrementalIntegers()).toEqual([
+        [1, 2, 3, 4],
+        [12, 13, 14, 5],
+        [11, 16, 15, 6],
+        [10, 9, 8, 7],
+      ]);
+    });
+
+    it('should create a spiral matrix of size 3', async () => {
+      const spiral = spiralMatrix(3);
+      expect(spiral.fillIncrementalIntegers()).toEqual([
+        [1, 2, 3],
+        [8, 9, 4],
+        [7, 6, 5],
+      ]);
+    });
+
+    it('should create a spiral matrix of size 2', async () => {
+      const spiral = spiralMatrix(2);
+      expect(spiral.fillIncrementalIntegers()).toEqual([
+        [1, 2],
+        [4, 3],
+      ]);
+    });
+
+    it('should create a spiral matrix of size 1', async () => {
+      const spiral = spiralMatrix(1);
+      expect(spiral.fillIncrementalIntegers()).toEqual([
+        [1],
+      ]);
+    });
+
+    it('should log a spiral matrix of size 8', async () => {
+      const spiral = spiralMatrix(8);
+      console.log(spiral.fillIncrementalIntegers());
+    });
+
+    it('should log a spiral matrix of size 10', async () => {
+      const spiral = spiralMatrix(10);
+      console.log(spiral.fillIncrementalIntegers());
+    });
   });
 });
